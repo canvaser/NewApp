@@ -2,6 +2,7 @@ package com.summer.app.main;
 
 import android.os.Bundle;
 
+import com.summer.app.R;
 import com.summer.app.base.AppActivity;
 import com.summer.app.folderapp.AppFolderFrag;
 import com.summer.lib.ope.BaseOpes;
@@ -16,7 +17,7 @@ public class MainActivity extends AppActivity<MainUIOpe,MainDAOpe> {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getOpes().getUiope().setWallpaper(activity);
-        FragmentUtil.getInstance().addToContaier(activity,new AppsFrag(), BaseID.ID_ACT_ROOT,System.currentTimeMillis()+"");
+        FragmentUtil.getInstance().addToContaier(activity,new AppsFrag(), R.id.rl_container,System.currentTimeMillis()+"");
     }
 
     @Override

@@ -17,6 +17,9 @@ public class MainUIBean extends BaseUIBean {
     RelativeLayout activityMain;
     @BindView(R.id.iv_bg)
     ImageView ivBg;
+    @BindView(R.id.rl_container)
+    RelativeLayout rlContainer;
+
 
     public MainUIBean(Context context) {
         super(context, R.layout.act_main);

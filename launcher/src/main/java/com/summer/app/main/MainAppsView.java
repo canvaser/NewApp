@@ -96,7 +96,7 @@ public class MainAppsView extends RecyclerView{
 
         @Override
         public int getItemCount() {
-            return 16;
+            return 10;
         }
 
         @Override
